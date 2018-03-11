@@ -1,0 +1,17 @@
+
+<nb-card>
+  <nb-card-header>
+    My Skills
+  </nb-card-header>
+
+  <nb-card-body>
+    <form class="form-inline">
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+
+      <button type="submit" class="btn btn-primary" style="align-self: right">Submit</button>
+    </form>
+  </nb-card-body>
+
+</nb-card>
+
